@@ -12,7 +12,7 @@ alias ll='ls -GlFhap --color=auto'				# 'ls' implementation
 alias ls='ls -GFhap --color=auto'				# Preferred 'ls' implementation
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias gd="cd ~/Google\ Drive"
 alias dt="cd ~/Desktop"
