@@ -1,7 +1,3 @@
-# --------------------
-# Ruby Version Manager
-# --------------------
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 #---------------------------
 # Z
 #---------------------------
@@ -36,3 +32,8 @@ if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
+
+# --------------------
+# Ruby Version Manager
+# --------------------
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
