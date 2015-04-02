@@ -95,6 +95,7 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
+	autocrlf = input
 
 [color]
 
@@ -169,3 +170,6 @@
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
 [url "git@github.com:christophergalvan/"]
   insteadOf = "git://github.com/christophergalvan/"
+[user]
+	name = Christopher Galvan
+	email = chris.galvan@gmail.com
