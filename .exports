@@ -1,18 +1,34 @@
-# Make vim the default editor.
-export EDITOR='vim';
+# ---------------------
+# Environment Variables
+# ---------------------
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export M2_HOME=/usr/local/opt/maven/libexec
+export M2=$M2_HOME/bin
+export ANT_HOME=/usr/local/opt/ant/libexec
+export GRADLE_HOME=/usr/local/opt/gradle/libexec
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/DevProjects/go_workspace
+export CATALINA_BASE=/usr/local/apache-tomcat-7.0.52
+export CATALINA_HOME=/usr/local/apache-tomcat-7.0.52
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GRADLE_HOME
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+export PATH=$PATH:/users/cgalvan/desktop/ford/hero_copy/author/crx-quickstart/opt/filevault/vault-cli-3.1.6/bin
+export PATH=$PATH:$HOME/.rvm/bin
+export PATH="/usr/local/heroku/bin:$PATH"
 
-# Increase Bash history size. Allow 32³ entries; the default is 500.
-export HISTSIZE='32768';
-export HISTFILESIZE="${HISTSIZE}";
-# Omit duplicates and commands that begin with a space from history.
-export HISTCONTROL='ignoreboth';
+# Larger bash history (allow 32³ entries; default is 500)
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
-
-# Highlight section titles in manual pages.
-export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';

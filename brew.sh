@@ -34,18 +34,10 @@ brew install bash-completion
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -82,6 +74,8 @@ brew install xz
 brew install ack
 #brew install exiv2
 brew install git
+brew install git-extras
+brew install git-flow
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -95,6 +89,57 @@ brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
+
+# Various
+brew install android-sdk
+brew install ant
+brew install asciidoc
+brew install aspell
+brew install autoconf
+brew install automake
+brew install bdw-gc
+brew install brew-cask
+brew install ctags
+brew install docbook
+brew install faac
+brew install ffmpeg
+brew install freetype
+brew install gdbm
+brew install gmp
+brew install go
+brew install gradle
+brew install groovy
+brew install guile
+brew install jpeg
+brew install lame
+brew install lastpass-cli
+brew install libffi
+brew install libgpg-error
+brew install libksba
+brew install libpng
+brew install libtool
+brew install libunistring
+brew install libvo-aacenc
+brew install libyaml
+brew install maven
+brew install openssl
+brew install pcre
+brew install pinentry
+brew install pkg-config
+brew install postgresql
+brew install python3
+brew install readline
+brew install ruby-build
+brew install screenfetch
+brew install sqlite
+brew install subversion
+brew install tidy
+brew install trash
+brew install uncrustify
+brew install webkit2png
+brew install x264
+brew install xvid
+brew install yuicompressor
 
 # Remove outdated versions from the cellar.
 brew cleanup
