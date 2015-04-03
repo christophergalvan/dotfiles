@@ -21,6 +21,19 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+# Common tasks
+alias cp="cp -iv"
+alias mv="-iv"
+alias mkdir="mkdir -pv"
+alias path="echo -e ${PATH//:/\\n}"
+alias qfind="find . -name "
+
+# Web Development
+alias apacheedit="sudo atom /private/etc/apache2/httpd.conf"
+alias apacherestart="sudo apachectl restart"
+alias edithosts="sudo atom /private/etc/hosts"
+
+
 # Programs
 alias safari="open -a safari"
 alias firefox="open -a firefox"

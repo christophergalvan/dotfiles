@@ -192,3 +192,57 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# 'mcd' makes new directory and jumps inside
+mcd () { mkdir -p "$1" && cd "$1";}
+
+#   mans:   Search manpage given in agument '1' for term given in argument '2' (case insensitive)
+#           displays paginated result with colored search terms and two lines surrounding each hit.             Example: mans mplayer codec
+#   --------------------------------------------------------------------
+    mans () {
+        man $1 | grep -iC2 --color=always $2 | less
+    }
+
+#   showa: to remind yourself of an alias (given some part of it)
+#   ------------------------------------------------------------
+    showa () { /usr/bin/grep --color=always -i -a1 $@ ~/.aliases | grep -v '^\s*$' | less -FSRXc ; }
+
+# Searching
+# ff:       Find file under the current directory
+ff () { /usr/bin/find . -name "$@" ; }
+# ffs:      Find file whose name starts with a given string
+ffs () { /usr/bin/find . -name "$@"'*' ; }
+# ffe:      Find file whose name ends with a given string
+ffe () { /usr/bin/find . -name '*'"$@" ; }
+
+#   findpid: find out the pid of a specified process
+#   -----------------------------------------------------
+#       Note that the command name can be specified via a regex
+#       E.g. findpid '/d$/' finds pids of all processes with names ending in 'd'
+#       Without the 'sudo' it will only find processes of the current user
+#   -----------------------------------------------------
+    findpid () { lsof -t -c "$@" ; }
+
+#   memhogstop, memhogsps:  Find memory hogs
+#   -----------------------------------------------------
+    alias memhogstop='top -l 1 -o rsize | head -20'
+    alias memhogsps='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
+
+#   cpuhogs:  Find CPU hogs
+#   -----------------------------------------------------
+    alias cpuhogs='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
+
+#   topforever:  Continual 'top' listing (every 10 seconds)
+#   -----------------------------------------------------
+    alias topforever='top -l 9999999 -s 10 -o cpu'
+
+#   ttop:  Recommended 'top' invocation to minimize resources
+#   ------------------------------------------------------------
+#       Taken from this macosxhints article
+#       http://www.macosxhints.com/article.php?story=20060816123853639
+#   ------------------------------------------------------------
+    alias ttop="top -R -F -s 10 -o rsize"
+
+#   myps: List processes owned by my user:
+#   ------------------------------------------------------------
+    myps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
