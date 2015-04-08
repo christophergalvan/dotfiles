@@ -144,3 +144,9 @@ alias reload="exec $SHELL -l"
 
 # Reload .bash_profile
 alias reloadb="source ~/.bash_profile"
+
+# Output most used commands
+alias hstat="history | cut -c8- | sort | uniq -c | sort -rn | head"
+
+# clear the console
+alias cls="clear"
