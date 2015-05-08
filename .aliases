@@ -36,6 +36,9 @@ alias tomcatstart="sudo /usr/local/apache-tomcat-7.0.52/bin/./catalina.sh run"
 alias tomcatstop="sudo /usr/local/apache-tomcat-7.0.52/bin/./shutdown.sh"
 alias aempa="mvn clean install -Plocal-author"
 
+# Database
+alias pgs='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgq='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # Programs
 alias safari="open -a safari"
