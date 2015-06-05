@@ -45,6 +45,8 @@ alias safari="open -a safari"
 alias firefox="open -a firefox"
 alias firefoxd="open -a firefoxdeveloperedition"
 alias chrome="open -a google\ chrome"
+alias chromei="osascript /Users/cgalvan/Google\\ Drive/AppleScripts/ChromeIncognito.scpt"
+alias canaryi="osascript /Users/cgalvan/Google\\ Drive/AppleScripts/ChromeCanaryIncognito.scpt"
 
 # List only directories
 alias lsd="ls -lFG | grep --color=never '^d'"
