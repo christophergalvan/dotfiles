@@ -35,6 +35,8 @@ alias edithosts="sudo atom /private/etc/hosts"
 alias tomcatstart="sudo /usr/local/apache-tomcat-7.0.52/bin/./catalina.sh run"
 alias tomcatstop="sudo /usr/local/apache-tomcat-7.0.52/bin/./shutdown.sh"
 alias aempa="mvn clean install -Plocal-author"
+alias aemstart="~/Desktop/ford/home/author/crx-quickstart/bin/./start"
+alias aemstop="~/Desktop/ford/home/author/crx-quickstart/bin/./stop"
 
 # Database
 alias pgs='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
