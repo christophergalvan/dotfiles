@@ -12,6 +12,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/DevProjects/go_workspace
 export CATALINA_BASE=/usr/local/apache-tomcat-7.0.52
 export CATALINA_HOME=/usr/local/apache-tomcat-7.0.52
+export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GRADLE_HOME
 export PATH=/usr/local/bin:$PATH
