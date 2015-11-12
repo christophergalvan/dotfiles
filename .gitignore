@@ -15,3 +15,6 @@ Thumbs.db
 
 # AEM vault files
 .vlt
+
+# IntelliJ IDEA project files
+.iml

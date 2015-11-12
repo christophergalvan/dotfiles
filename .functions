@@ -1,3 +1,4 @@
+E_BADARGS=85
 # --------------------------
 # File and Folder Management
 # --------------------------
@@ -242,3 +243,27 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }
 #   myps: List processes owned by my user:
 #   ------------------------------------------------------------
     myps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
+
+# aemstart: start a local instance of AEM
+# --------------------------------------------------------------
+  startAEM() {
+    if [ $# -eq 0 ]
+    then
+      echo "Usage: 'aemstart $0' argument1"
+    else
+      echo "Starting AEM instance at: ~/Desktop/ford/$1/author/crx-quickstart/bin/./start";
+      ~/Desktop/ford/"$1"/author/crx-quickstart/bin/./start
+    fi
+  }
+
+# aemstop: stop a local instance of AEM
+# --------------------------------------------------------------
+  stopAEM() {
+    if [ $# -eq 0 ]
+    then
+      echo "Usage: 'aemstop $0' argument1"
+    else
+      echo "Stopping AEM instance at: ~/Desktop/ford/$1/author/crx-quickstart/bin/./stop";
+      ~/Desktop/ford/"$1"/author/crx-quickstart/bin/./stop
+    fi
+  }
