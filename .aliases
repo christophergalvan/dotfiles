@@ -23,7 +23,7 @@ alias j="jobs"
 
 # Common tasks
 alias cp="cp -iv"
-alias mv="-iv"
+alias mv="mv -iv"
 alias mkdir="mkdir -pv"
 alias path="echo -e ${PATH//:/\\n}"
 alias qfind="find . -name "
