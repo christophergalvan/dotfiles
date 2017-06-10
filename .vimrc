@@ -120,7 +120,7 @@ nmap <silent> <LEFT><LEFT>   :cpfile<CR><C-G>
     endfunction
 
 " make % match = and ; 
-set matchpairs+==:;,":"
+set matchpairs+==:;
 
 " ================================================
 " ================================================
