@@ -116,6 +116,9 @@ nmap <silent> <LEFT><LEFT>   :cpfile<CR><C-G>
         endif
     endfunction
 
+" make % match = and ; 
+set matchpairs+==:;
+
 " ================================================
 " ================================================
 " TAGS
