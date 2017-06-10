@@ -84,6 +84,9 @@ set ignorecase
 " override 'ignorecase' when pattern has uppercase characters
 set smartcase
 
+" make delete key in Normal mode remove the persistently highlighted matches
+nmap <silent> <BS> :nohlsearch<CR>
+
 " keep search pattern at the center of the screen
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
