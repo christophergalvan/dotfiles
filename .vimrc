@@ -84,9 +84,6 @@ set ignorecase
 " override 'ignorecase' when pattern has uppercase characters
 set smartcase
 
-" make regex searching friendly
-nnoremap / /\v
-
 " make delete key in Normal mode remove the persistently highlighted matches
 nmap <silent> <BS> :nohlsearch<CR>
 
