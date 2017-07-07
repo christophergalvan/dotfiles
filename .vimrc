@@ -292,10 +292,14 @@ vnoremap > >gv " better indentation
 " =============================================
 " =============================================
 
+" open and close folds automatically
+ set foldopen=all
+ set foldclose=all
+
 " set fold method to indent
 set foldmethod=indent
 
-" set to display all folds open
+" set to display all folds
 set foldenable
 
 " =============================================
