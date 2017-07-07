@@ -135,7 +135,7 @@ set matchpairs+==:;
 " ================================================
 
 " number of screen lines to show around the cursor
-set scrolloff=8
+set scrolloff=15
 set sidescrolloff=15
 set sidescroll=1
 
