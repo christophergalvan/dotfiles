@@ -334,6 +334,9 @@ set autochdir
 " how many command lines are remembered
 set history=1000
 
+" command line completion
+set wildmode=list:longest,full
+
 " =============================================
 " =============================================
 " EXECTUTING EXTERNAL COMMANDS
