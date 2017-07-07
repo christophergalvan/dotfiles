@@ -292,8 +292,8 @@ vnoremap > >gv " better indentation
 " =============================================
 " =============================================
 
-" set fold method to use current syntax
-set foldmethod=syntax
+" set fold method to indent
+set foldmethod=indent
 
 " set to display all folds open
 set foldenable
