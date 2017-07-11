@@ -29,6 +29,22 @@ else
  set backup
 endif
 
+" ================================================
+" ================================================
+" PLUGINS 
+" ================================================
+" ================================================
+
+" setup vim-plug plugin manager
+" specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+"
+" NERDTree
+Plug 'scrooloose/nerdtree'
+"
+" initialize plugin system
+call plug#end()
+
 " This switches on three very clever mechanisms:
 " 1. Filetype detection.
 " Whenever you start editing a file, Vim will try to figure out what kind of
@@ -380,5 +396,4 @@ set fenc=utf-8
 " ====================================
 " ====================================
 
-" setup Pathogen to manage plugins
-" execute pathogen#infect()
+
