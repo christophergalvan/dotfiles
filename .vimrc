@@ -182,7 +182,7 @@ noremap <space> :set hlsearch! hlsearch?<CR>
 noremap <Leader>h *<C-O>
 
 " colorscheme
-colorscheme darkblue
+colorscheme apprentice
 
 " ================================================
 " ================================================
