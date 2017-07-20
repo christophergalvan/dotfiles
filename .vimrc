@@ -41,6 +41,12 @@ call plug#begin('~/.vim/plugged')
 "
 " NERDTree
 Plug 'scrooloose/nerdtree'
+" vim-airline
+Plug 'vim-airline/vim-airline'
+" vim-bufferline
+Plug 'bling/vim-bufferline'
+" undo tree
+Plug 'mbbill/undotree'
 "
 " initialize plugin system
 call plug#end()
