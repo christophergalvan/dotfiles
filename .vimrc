@@ -53,6 +53,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 " tabular
 Plug 'godlygeek/tabular'
+" NERDCommenter
+Plug 'scrooloose/nerdcommenter'
 "
 " initialize plugin system
 call plug#end()
