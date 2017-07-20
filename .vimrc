@@ -47,6 +47,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
 " undo tree
 Plug 'mbbill/undotree'
+" git gutter
+Plug 'airblade/vim-gitgutter'
 "
 " initialize plugin system
 call plug#end()
