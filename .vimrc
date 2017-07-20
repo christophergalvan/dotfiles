@@ -55,6 +55,8 @@ Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular'
 " NERDCommenter
 Plug 'scrooloose/nerdcommenter'
+" ctrlp
+Plug 'kien/ctrlp.vim'
 "
 " initialize plugin system
 call plug#end()
