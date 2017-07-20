@@ -49,6 +49,10 @@ Plug 'bling/vim-bufferline'
 Plug 'mbbill/undotree'
 " git gutter
 Plug 'airblade/vim-gitgutter'
+" surround
+Plug 'tpope/vim-surround'
+" tabular
+Plug 'godlygeek/tabular'
 "
 " initialize plugin system
 call plug#end()
