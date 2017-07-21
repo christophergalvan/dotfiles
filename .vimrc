@@ -63,6 +63,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 " indent guides
 Plug 'nathanaelkane/vim-indent-guides'
+" gruvbox
+Plug 'morhetz/gruvbox'
 "
 " initialize plugin system
 call plug#end()
@@ -177,6 +179,9 @@ set scrolloff=15
 set sidescrolloff=15
 set sidescroll=1
 
+" show line numbers
+set relativenumber
+
 "
 " ================================================
 " ================================================
@@ -185,7 +190,7 @@ set sidescroll=1
 " ================================================
 
 " highlight the screen line of the cursor
-set cursorline
+"set cursorline
 
 " highlight all matches for the last used search pattern
 set hlsearch
@@ -203,8 +208,21 @@ noremap <space> :set hlsearch! hlsearch?<CR>
 " highlight word at cursor without changing position
 noremap <Leader>h *<C-O>
 
+" set terminal colors
+set termguicolors
+set background=dark
+
+" grubbox specific configuration
+let g:gruvbox_italic=1
+let g:gruvbox_italicize_comments=1
+let g:gruvbox_italicize_strings=1
+let g:gruvbox_improved_strings=1
+let g:gruvbox_improved_warnings=1
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_light='soft'
+"
 " colorscheme
-colorscheme apprentice
+colorscheme gruvbox
 
 " ================================================
 " ================================================
