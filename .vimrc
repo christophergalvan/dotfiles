@@ -61,6 +61,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'kien/ctrlp.vim'
 " emmet
 Plug 'mattn/emmet-vim'
+" indent guides
+Plug 'nathanaelkane/vim-indent-guides'
 "
 " initialize plugin system
 call plug#end()
@@ -324,6 +326,9 @@ set copyindent
 " easier moving of code blocks
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
+
+" enable indent guides plugin on startup 
+let g:indent_guides_enable_on_vim_startup=1
 
 " =============================================
 " =============================================
