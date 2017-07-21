@@ -43,6 +43,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 " vim-airline
 Plug 'vim-airline/vim-airline'
+" vim-airline themes
+Plug 'vim-airline/vim-airline-themes'
 " vim-bufferline
 Plug 'bling/vim-bufferline'
 " undo tree
