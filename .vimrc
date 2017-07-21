@@ -258,6 +258,9 @@ set showmode
 " show cursor position below each window
 set ruler
 
+" denotes how to display the filename of a buffer
+let g:bufferline_fname_mod=':p'
+
 " ===============================================
 " ===============================================
 " SELECTING TEXT
