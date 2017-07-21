@@ -57,6 +57,8 @@ Plug 'godlygeek/tabular'
 Plug 'scrooloose/nerdcommenter'
 " ctrlp
 Plug 'kien/ctrlp.vim'
+" emmet
+Plug 'mattn/emmet-vim'
 "
 " initialize plugin system
 call plug#end()
