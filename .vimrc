@@ -47,8 +47,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " vim-bufferline
 Plug 'bling/vim-bufferline'
-" undo tree
-Plug 'mbbill/undotree'
+" Gundo
+Plug 'sjl/gundo.vim'
 " git gutter
 Plug 'airblade/vim-gitgutter'
 " surround
