@@ -162,6 +162,10 @@ nmap <silent> <LEFT><LEFT>   :cpfile<CR><C-G>
 " make % match = and ; 
 set matchpairs+==:;
 
+" ctrlp mapping
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
+
 " ================================================
 " ================================================
 " TAGS
