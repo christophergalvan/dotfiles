@@ -65,6 +65,8 @@ Plug 'mattn/emmet-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 " gruvbox
 Plug 'morhetz/gruvbox'
+" syntastic
+Plug 'scrooloose/syntastic'
 "
 " initialize plugin system
 call plug#end()
@@ -228,6 +230,16 @@ let g:gruvbox_contrast_light='soft'
 " colorscheme
 colorscheme gruvbox
 
+" syntastic options
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
+
 " ================================================
 " ================================================
 " MULTIPLE WINDOWS
@@ -283,7 +295,7 @@ set showmode
 set ruler
 
 " denotes how to display the filename of a buffer
-let g:bufferline_fname_mod=':p'
+let g:bufferline_fname_mod=':p:.'
 
 " ===============================================
 " ===============================================
