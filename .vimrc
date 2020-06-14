@@ -63,11 +63,14 @@ Plug 'kien/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 " indent guides
 Plug 'nathanaelkane/vim-indent-guides'
-" gruvbox
-Plug 'morhetz/gruvbox'
-" syntastic
-Plug 'scrooloose/syntastic'
-"
+" vim-polyglot
+Plug 'sheerun/vim-polyglot'
+" vim-autoformat
+Plug 'chiel92/vim-autoformat'
+" vim-auto-save
+Plug '907th/vim-auto-save'
+" vim-kolor
+Plug 'zeis/vim-kolor'
 " initialize plugin system
 call plug#end()
 
@@ -161,10 +164,10 @@ nmap <silent> <LEFT><LEFT>   :cpfile<CR><C-G>
         endif
     endfunction
 
-" make % match = and ; 
+" make % match = and ;
 set matchpairs+==:;
 
-" ctrlp mapping
+" CtrlP mapping
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
 
@@ -181,7 +184,7 @@ let g:ctrlp_cmd='CtrlP'
 " ================================================
 
 " number of screen lines to show around the cursor
-set scrolloff=15
+set scrolloff=5
 set sidescrolloff=15
 set sidescroll=1
 
@@ -214,31 +217,11 @@ noremap <space> :set hlsearch! hlsearch?<CR>
 " highlight word at cursor without changing position
 noremap <Leader>h *<C-O>
 
-" set terminal colors
-set termguicolors
-set background=dark
+" set guifont
+set guifont=Fira_Code:h9:cANSI:qDRAFT
 
-" grubbox specific configuration
-let g:gruvbox_italic=1
-let g:gruvbox_italicize_comments=1
-let g:gruvbox_italicize_strings=1
-let g:gruvbox_improved_strings=1
-let g:gruvbox_improved_warnings=1
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_contrast_light='soft'
-"
 " colorscheme
-colorscheme gruvbox
-
-" syntastic options
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
+colorscheme kolor
 
 " ================================================
 " ================================================
@@ -295,7 +278,7 @@ set showmode
 set ruler
 
 " denotes how to display the filename of a buffer
-let g:bufferline_fname_mod=':p:.'
+"let g:bufferline_fname_mod=':p'
 
 " ===============================================
 " ===============================================
@@ -361,7 +344,7 @@ set copyindent
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
 
-" enable indent guides plugin on startup 
+" enable indent guides plugin on startup
 let g:indent_guides_enable_on_vim_startup=1
 
 " set indent guides size
@@ -460,5 +443,7 @@ set fenc=utf-8
 " VARIOUS
 " ====================================
 " ====================================
-
+"
+" enable auto-save plugin at startup
+let g:auto_save = 1
 
