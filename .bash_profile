@@ -36,7 +36,7 @@ fi;
 # --------------------
 # Ruby Version Manager
 # --------------------
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # ----------------------------------------
 # Always list directory contents upon 'cd'

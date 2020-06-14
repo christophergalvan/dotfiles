@@ -10,8 +10,8 @@ export ANT_HOME=/usr/local/opt/ant/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/DevProjects/go_workspace
-export CATALINA_BASE=/usr/local/apache-tomcat-7.0.52
-export CATALINA_HOME=/usr/local/apache-tomcat-7.0.52
+#export CATALINA_BASE=/usr/local/apache-tomcat-7.0.52
+#export CATALINA_HOME=/usr/local/apache-tomcat-7.0.52
 export PATH=/usr/local/sbin:$PATH
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GRADLE_HOME
@@ -19,10 +19,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
-export PATH=$PATH:/users/cgalvan/desktop/ford/hero_copy/author/crx-quickstart/opt/filevault/vault-cli-3.1.6/bin
-export PATH=$PATH:/usr/local/wadl-dist-1.1.6/bin/wadl2java
-export PATH=/usr/local/heroku/bin:$PATH
-export PATH="$PATH:$HOME/.rvm/bin"
+#export PATH=$PATH:/usr/local/wadl-dist-1.1.6/bin/wadl2java
+#export PATH=/usr/local/heroku/bin:$PATH
+#export PATH="$PATH:$HOME/.rvm/bin"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768

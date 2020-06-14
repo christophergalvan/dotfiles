@@ -174,11 +174,11 @@
   insteadOf = "git://github.com/christophergalvan/"
 [user]
 	name = Christopher Galvan
-	email = chris.galvan@gmail.com
+	email = christopher@galvan.la
 
-	[difftool "sourcetree"]
-		cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
-		path =
-	[mergetool "sourcetree"]
-		cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-		trustExitCode = true
+#[difftool "sourcetree"]
+#    cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
+#    path =
+#[mergetool "sourcetree"]
+#    cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+#    trustExitCode = true
